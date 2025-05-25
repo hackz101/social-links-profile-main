@@ -14,7 +14,7 @@
   --ff-main: "Inter", sans-serif;
 
   --fs-main: 0.875rem;
-  --fs-title: 2.25rem;
+  --fs-title: 1.75rem;
 
   font-size: var(--fs-main);
 }
@@ -57,7 +57,7 @@ img {
 .name {
   font-size: var(--fs-title);
   font-weight: 600;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .location {
