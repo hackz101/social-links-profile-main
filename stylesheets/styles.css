@@ -14,7 +14,7 @@
   --ff-main: "Inter", sans-serif;
 
   --fs-main: 0.875rem;
-  --fs-title: 1.5rem;
+  --fs-title: 2.25rem;
 
   font-size: var(--fs-main);
 }
@@ -41,23 +41,23 @@ body {
 
 .card {
   background-color: var(--color-dark-grey);
-  border-radius: 0.5rem;
-  width: 26rem;
-  padding: 2.5rem;
+  border-radius: 0.75rem;
+  width: 28rem;
+  padding: 3rem;
   text-align: center;
 }
 
 /*card content styles*/
 img {
   border-radius: 50%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   width: 30%;
 }
 
 .name {
   font-size: var(--fs-title);
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .location {
@@ -67,12 +67,14 @@ img {
 }
 
 .description {
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
 }
 
-/*button styles*/
+/*button group styles*/
 ul {
   padding: 0;
+  margin: 0;
+  display: grid;
 }
 
 li {
@@ -81,10 +83,6 @@ li {
 
 li:not(:last-child) {
   margin-bottom: 1rem;
-}
-
-.button-group {
-  display: grid;
 }
 
 button {
@@ -96,6 +94,7 @@ button {
   color: var(--color-white);
   font-weight: 700;
   transition: background-color 0.15s ease, color 0.3s ease;
+  cursor: pointer;
 }
 
 button:hover {
@@ -103,10 +102,10 @@ button:hover {
   background-color: var(--color-lime);
 }
 
-/*default footer info styles*/
+/*footer info styles*/
 .attribution {
   font-size: 11px;
   text-align: center;
   
 }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: var(--color-lime); }
