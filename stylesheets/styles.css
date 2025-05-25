@@ -97,7 +97,8 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:hover,
+button:active {
   color: var(--color-black);
   background-color: var(--color-lime);
 }
