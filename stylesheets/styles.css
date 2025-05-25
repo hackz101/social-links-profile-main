@@ -14,20 +14,16 @@
   --ff-main: "Inter", sans-serif;
 
   --fs-main: 0.875rem;
-  --fs-title: 2.2rem;
+  --fs-title: 1.5rem;
 
   font-size: var(--fs-main);
 }
 
-/*reset*/
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
+* {
   box-sizing: border-box;
 }
 
+/*layout styles*/
 body {
   font-family: var(--ff-main);
   font-weight: 400;
@@ -51,6 +47,7 @@ body {
   text-align: center;
 }
 
+/*card content styles*/
 img {
   border-radius: 50%;
   margin-bottom: 1.5rem;
@@ -74,27 +71,36 @@ img {
 }
 
 /*button styles*/
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .button-group {
   display: grid;
 }
 
 button {
   border: none;
-  border-radius: 0.5rem;;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 100%;
   background-color: var(--color-grey);
   color: var(--color-white);
   font-weight: 700;
-  padding: 1rem;
   transition: background-color 0.15s ease, color 0.3s ease;
 }
 
 button:hover {
   color: var(--color-black);
   background-color: var(--color-lime);
-}
-
-button:not(:last-child) {
-  margin-bottom: 1rem;
 }
 
 /*default footer info styles*/
